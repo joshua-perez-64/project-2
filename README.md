@@ -13,13 +13,95 @@ Objective: Screen pre-diabetes/diabetes outcomes using various health indicators
 Significance: Understanding diabetes risk factors and enabling early detection
 Goals: Develop a predictive model to screen patients and predict their risk of pre-diabetes/diabetes
 
-**The objective of this project was to come up with an AI model that can screen pre-diabetes/diabetes using multiple health risk factors. As a result we came up with a logistic regression AI model that had a 73% accuracy and a recall of 77% to predict diabetes.** 
+# Project Objective
 
-**Initially we started off by seraching for data sets. We found a data set from the UC Irvine Machine Learning Repository called the CDC Diabetes Health Indiicators data set. This data set can also be found on Kaggle and is part of the Behavioural Risk Factor Surveillance System which is a health related telephone survey that is taken by the CDC anually. This dataset was chosen because it had approximately 215,000 instances of data whereas other health datasets had less data. The data was taken and analysed. First, all the features of the dataset were analysed to see which features felt relevant for our model. The features we removed were income and and healthcare coverage because we wanted to pick features that did not have much to do with financial outcome, and we did not feel that those features would be as relevannt to the rest of the lifestyle features. Other reasons for removing those features were that our app wanted to keep in mind a possible audience that did not have high income and health coverage. If people already had health coverage then they were more likely to find out their risk from the doctor. Furthermore, using clinical judgment and domain expertise we felt that even though those features may possibly be relevant they are not as relevant as the rest of the features in influencing prediabetes/diabetes. After exploring and dropping certain features we looked at how many instances of prediabetcs/diabetic and non diabetics there were in the data. 218334 instances were non diabetic and 35346 instances were prediabetic/diabetic. This showed that the dataset was imbalanced amongst diseased and non diseased. Other observations made were that certain features of the data were already encoded and formed into buckets. BMI was our only data set that had numbers that were quantitave values. The rest of the data had qualitative data that were encoded into numbers or buckets. Value counts for other features were taken, but were not too relevant to our findings.**
+The objective of this project was to come up with an AI model that can screen pre-diabetes/diabetes using multiple health risk factors. As a result, we developed a logistic regression AI model with 73% accuracy and a recall of 77% to predict diabetes.
 
-**After exploring, and cleaning the data our group decided to proceed with making AI models. Our group selected the following models: logistic regression, random forest, and Decision Tree model. We felt that the decision tree model would be a better fit because our end outcome was a simple yes or no answer in terms of whether the patient was at risk for diabetes or not at risk for diabetes. Furthermore most of our variables were encoded, therefore most features also resulted to having a yes or no answer. Our data also did not have any missing features so logistic regression seemed like a better model to hypothesise. In other words, our data was simple and logistic regression was good for simple models. We thought a random forest model may work  as well because random forest does a better job at taking multiple complex features in a model. The decision tree model was selected as a third model because it has the ability to create branches and has a very systemic way of coming up with a conclusion. We did not feel this would be the best model, however we thought it would be good to see as a reference model how well it does. When we built each model the accuracies were the following: logistics regression was 86% accurate, random forest was 85% accurate, and decision tree was 80% accurate. These were good results, however when we further investigated our results we realised that our models were very good at predicting non diabetic cases because there were substantially more cases of nondiabetics in the data than diabetics. As a result, our model was good at predicting that there was no diabetes instead of predicting that patients had a risk of diabetes, and when we further analysed the precision and recall we realised that both values in all three models were low. After analysing the results we decided to optimize the machine learning algorythm. We tried the following techniques: reducing features to train model, resampling techniques such as under/oversampling, and scaling our data.**
+---
 
-**Our most succesful model turned out to be a logistics regression model where we used undersampling to balance the data amongst diabetics and non diabetics. In this model we also reduced outliers from our BMI data feature. We chose this model because it showed the highest accuracy which was 73%. Furthermore, when we further analysed the confusion matrix we saw that the recall for diabetics had reached 77%. The recall was chosen as a major indicator for us because as a diabetes risk assesment tool we felt that it was better if the model focused on not missing diabetic cases. In other words, we would prefer that our model have less False negative readings and more false positive readings. This is because it is more detrimental for a patient to miss being diabetic for a long time rather than being falsely classified as diabetic, and getting checked out.** 
+# Data Collection and Initial Analysis
 
-**For future implications we would expand our data sets and first collect more data from diabetics from different population. This would balance our data set quite well. Then we would expand our dataset globally and try get a more diverse set of data that our model could train on. We would try to explore more advance data models on this information such as deep nueral networks. We could also look into additional features in the data since the dataset would be more wholistic we could possibly get a better view of the data and what features are stronger. We would also further label our data into Type1, Type 2, and prediabetic to get a more granular aspect on disease prospect and risk. We would then use this information to develop a risk assemsent application that would flag users for possible risk that would allow them to go and get checked by a physician.**
+Initially, we started off by searching for datasets. We found a dataset from the UC Irvine Machine Learning Repository called the [CDC Diabetes Health Indicators dataset](https://archive.ics.uci.edu/dataset/891/cdc+diabetes+health+indicators). This dataset can also be found on Kaggle and is part of the Behavioral Risk Factor Surveillance System, which is a health-related telephone survey conducted annually by the CDC.
 
+This dataset was chosen because it had approximately 215,000 instances, whereas other health datasets had less data.
+
+---
+
+### Feature Selection and Data Flaws
+
+The data was analyzed, and we focused on which features felt relevant for our model. We removed the features "income" and "healthcare coverage" because we wanted to select features not strongly tied to financial outcomes. Additionally, our app aimed to consider audiences without high income or health coverage. Those with health coverage were more likely to get risk assessments from their doctors.
+
+Using clinical judgment and domain expertise, we determined that even though income and healthcare coverage could be relevant, they were not as impactful as other lifestyle features. After finalizing the features, we looked at the number of pre-diabetic/diabetic versus non-diabetic instances in the data:
+
+- **Non-diabetic cases:** 218,334
+- **Pre-diabetic/diabetic cases:** 35,346
+
+This indicated a class imbalance between diseased and non-diseased individuals. We also observed that many of the features were already encoded into buckets, while BMI was the only feature with quantitative values. The remaining features were qualitative and encoded into numbers.
+
+---
+
+# Model Selection and Evaluation
+
+After cleaning and exploring the data, we proceeded with model development. We selected the following models:
+
+- **Logistic Regression**
+- **Random Forest**
+- **Decision Tree**
+
+---
+
+### Model Rationale
+
+We felt that the **Logistic Regression** might be a good fit because the outcome was a simple "yes" or "no" answer, determining whether the patient was at risk for diabetes. Most of our features were encoded, leading to binary "yes/no" answers.
+
+Additionally, since our data was simple and complete, we considered **logistic regression** a strong candidate for hypothesis testing. **Random forest** was chosen because it handles multiple complex features better.
+
+Although we did not expect the **decision tree** to be the best model, we included it for comparison purposes.
+
+---
+
+### Initial Results
+
+When we built each model, the accuracy results were:
+
+- **Logistic Regression:** 86% accuracy
+- **Random Forest:** 85% accuracy
+- **Decision Tree:** 80% accuracy
+
+While these results seemed promising, we realized that our models were better at predicting non-diabetic cases due to the class imbalance. This led to poor performance in detecting diabetic patients. Upon further investigation of precision and recall, both values were low for all three models.
+
+---
+
+# Model Optimization
+
+To address the issue of class imbalance and improve the model, we applied the following techniques:
+
+1. Reducing the number of features
+2. Resampling techniques (under/oversampling)
+3. Scaling the data
+
+---
+
+# Final Model and Results
+
+Our most successful model was the **logistic regression model** using undersampling to balance the data between diabetics and non-diabetics. We also reduced outliers in the BMI feature.
+
+This model showed the highest accuracy at 73%. Upon further analysis of the confusion matrix, the recall for diabetic cases was 77%. We prioritized recall because, as a diabetes risk assessment tool, it is crucial not to miss diabetic cases.
+
+In other words, we preferred fewer **false negatives** (missing diabetic cases) over more **false positives** (incorrectly identifying non-diabetics as diabetics). This approach is more beneficial as it encourages patients to get checked, reducing the risk of missed diagnoses.
+
+---
+
+# Future Implications
+
+For future improvements, we would:
+
+1. **Expand the dataset** by collecting more diabetic cases from diverse populations, which would help balance the data.
+2. **Global expansion** of the dataset to get a broader, more diverse sample for model training.
+3. **Explore advanced data models**, such as deep neural networks, to better handle complex data.
+4. **Include additional features** in the dataset for a more holistic view of health risks.
+5. **Granular classification** into Type 1, Type 2, and pre-diabetic cases, to improve disease risk prediction.
+6. **Develop a risk assessment application** that would flag users for potential diabetes risk and encourage them to seek medical advice.
+
+# Citations
+    Teboul, Alex. “Diabetes Health Indicators Dataset.” Kaggle, 8 Nov. 2021, www.kaggle.com/datasets/alexteboul/diabetes-health-indicators-dataset. 
