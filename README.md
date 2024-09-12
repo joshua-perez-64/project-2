@@ -103,9 +103,15 @@ For future improvements, we would:
 5. **Granular classification** into Type 1, Type 2, and pre-diabetic cases, to improve disease risk prediction.
 6. **Develop a risk assessment application** that would flag users for potential diabetes risk and encourage them to seek medical advice.
 
-Job Market analysis:
+---
 
-Disease burden on diabetes in the US is about 38.4 million for people of all ages. Furthermore, the population continues to age which will make diabetes more prevalent in the future. Accoording to Dr. Rowley from the NIH, diabetes should increase to 55 million by 2030. This shows the need for acting on the disease burden. Jobs in healthcare management should grow around 28% by 2021-2031. Depending on how wholistic we want our data to be, the cost depending on staying in one region can range from $75,000-$300,000 dollars. This value is based on grants given by universities to be about $50,000 to including costs for a public health researcher and global doctors' opinions. 
+# Job Market Analysis
+
+The disease burden of diabetes in the US is approximately 38.4 million people across all ages. As the population continues to age, diabetes is expected to become even more prevalent in the future. According to **Dr. Rowley from the NIH**, diabetes cases are projected to increase to **55 million by 2030**. This highlights the urgent need to address the growing disease burden.
+
+Jobs in healthcare management are anticipated to grow by around **28% from 2021 to 2031**, reflecting the increasing demand for professionals in this sector. The cost of addressing this issue, depending on the scope and region, can range from **$75,000 to $300,000**. This estimate is based on grants typically awarded by universities (around **$50,000**), and includes costs for public health researchers and incorporating global healthcare opinions from doctors and experts.
+
+---
 
 # Citations
     Teboul, Alex. “Diabetes Health Indicators Dataset.” Kaggle, 8 Nov. 2021, www.kaggle.com/datasets/alexteboul/diabetes-health-indicators-dataset.
