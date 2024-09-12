@@ -103,5 +103,29 @@ For future improvements, we would:
 5. **Granular classification** into Type 1, Type 2, and pre-diabetic cases, to improve disease risk prediction.
 6. **Develop a risk assessment application** that would flag users for potential diabetes risk and encourage them to seek medical advice.
 
+Job Market analysis:
+
+Disease burden on diabetes in the US is about 38.4 million for people of all ages. Furthermore, the population continues to age which will make diabetes more prevalent in the future. Accoording to Dr. Rowley from the NIH, diabetes should increase to 55 million by 2030. This shows the need for acting on the disease burden. Jobs in healthcare management should grow around 28% by 2021-2031. Depending on how wholistic we want our data to be, the cost depending on staying in one region can range from $75,000-$300,000 dollars. This value is based on grants given by universities to be about $50,000 to including costs for a public health researcher and global doctors' opinions. 
+
 # Citations
-    Teboul, Alex. “Diabetes Health Indicators Dataset.” Kaggle, 8 Nov. 2021, www.kaggle.com/datasets/alexteboul/diabetes-health-indicators-dataset. 
+    Teboul, Alex. “Diabetes Health Indicators Dataset.” Kaggle, 8 Nov. 2021, www.kaggle.com/datasets/alexteboul/diabetes-health-indicators-dataset.
+
+    Health Care Job Growth Remains Strong through 2031, www.purdueglobal.edu/blog/health-sciences/growing-health-care-workforce/. Accessed 12 Sept. 2024. 
+
+    Rowley, William R, et al. “Diabetes 2030: Insights from Yesterday, Today, and Future Trends.” Population Health Management, U.S. National Library of Medicine, Feb. 2017, www.ncbi.nlm.nih.gov/pmc/articles/PMC5278808/.
+
+    “About the Special Diabetes Program - NIDDK.” National Institute of Diabetes and Digestive and Kidney Diseases, U.S. Department of Health and Human Services, www.niddk.nih.gov/about-niddk/research-areas/diabetes/type-1-diabetes-special-statutory-funding-program/about-special-diabetes-program. Accessed 11 Sept. 2024. 
+
+    “National Diabetes Statistics Report.” Centers for Disease Control and Prevention, Centers for Disease Control and Prevention, www.cdc.gov/diabetes/php/data-research/index.html. Accessed 11 Sept. 2024.
+
+    Ceriello, Antonio, and Francesco Prattichizzo. “Variability of Risk Factors and Diabetes Complications.” Cardiovascular Diabetology, U.S. National Library of Medicine, pubmed.ncbi.nlm.nih.gov/33962641/. Accessed 9 Sept. 2024. 
+
+    “Lesson 4: Diabetes Risk Factors (English).” Edited by Care New England, YouTube, YouTube, 20 Oct. 2020, www.youtube.com/watch?v=rrX2Hn2iesM. 
+
+    “Type 2 Diabetes.” Mayo Clinic, Mayo Foundation for Medical Education and Research, 14 Mar. 2023, www.mayoclinic.org/diseases-conditions/type-2-diabetes/symptoms-causes/syc-20351193. 
+
+    “Diabetes Risk Factors.” Centers for Disease Control and Prevention, Centers for Disease Control and Prevention, www.cdc.gov/diabetes/risk-factors/index.html. Accessed 9 Sept. 2024.
+
+    ND, Wong ND, and Sattar N. “Cardiovascular Risk in Diabetes Mellitus: Epidemiology, Assessment and Prevention.” Nature Reviews. Cardiology, U.S. National Library of Medicine, pubmed.ncbi.nlm.nih.gov/37193856/. Accessed 9 Sept. 2024.
+
+    “Accuracy vs. Precision vs. Recall in Machine Learning: What’s the Difference?” Evidently AI - Open-Source ML Monitoring and Observability, www.evidentlyai.com/classification-metrics/accuracy-precision-recall. Accessed 9 Sept. 2024. 
